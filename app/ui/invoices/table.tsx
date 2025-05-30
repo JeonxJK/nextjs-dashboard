@@ -24,6 +24,7 @@ export default async function InvoicesTable({
                 className="mb-2 w-full rounded-md bg-white p-4"
               >
                 <div className="flex items-center justify-between border-b pb-4">
+                  <UpdateInvoice id={invoice.id} />
                   <div>
                     <div className="mb-2 flex items-center">
                       <Image
@@ -31,7 +32,6 @@ export default async function InvoicesTable({
                         className="mr-2 rounded-full"
                         width={28}
                         height={28}
-                        alt={`${invoice.name}'s profile picture`}
                       />
                       <p>{invoice.name}</p>
                     </div>
